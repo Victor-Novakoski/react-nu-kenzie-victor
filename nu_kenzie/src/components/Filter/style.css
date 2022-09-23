@@ -1,0 +1,25 @@
+.div__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.div__buttons div {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.div__buttons div button {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+}
+.div__buttons div button:hover {
+  color: var(--grey-1);
+  background-color: var(--color-primary);
+}
+@media (min-width:1024px){
+  .div__buttons{
+    flex-direction: row;
+  }
+}

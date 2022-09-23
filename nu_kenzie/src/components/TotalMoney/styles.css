@@ -1,0 +1,19 @@
+.div__totalMoney {
+  margin-top: 3rem;
+  width: 100%;
+  height: 20%;
+  border: 1px solid var(--grey-2);
+  padding: 1rem;
+  border-radius: 4px;
+}
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .2rem;
+}
+.total span {
+  color: var(--color-primary);
+  font-weight: 900;
+}
