@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --color-primary: #fd377e;
+  --color-primary-2: #e34981;
+  --color-secondary: #03b898;
+  --grey-1: #f8f9fa;
+  --grey-2: #e9ecef;
+  --grey-3: #868e96;
+  --grey-4: #212529;
+  --shadow--header: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+button{
+  cursor: pointer;
+}
