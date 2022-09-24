@@ -16,6 +16,9 @@
   margin: 0 auto;
   border-radius: 8px;
 }
+.form button:hover {
+  background-color: var(--color-primary-2);
+}
 .div__descricao {
   display: flex;
   gap: 1rem;
