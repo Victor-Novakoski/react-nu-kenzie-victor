@@ -1,29 +1,25 @@
 import React, { useState } from 'react'
 import './styles.css'
 function Form({ listTransactions, setListTransactions }) {
-  const [newTransaction, setNewTransaction] = useState({
-    description: '',
-    value: '',
-    type: '',
-  })
   const hadleSubmit = event => {
     event.preventDefault()
-    setListTransactions([...listTransactions, newTransaction])
+    setListTransactions([
+      ...listTransactions,
+      {
+        description: event.target.description.value,
+        value: parseInt(event.target.value.value),
+        type: event.target.type.value,
+      },
+    ])
   }
   return (
     <form className="form" onSubmit={event => hadleSubmit(event)} action="">
       <div className="div__descricao">
         <label htmlFor="">Descrição</label>
         <input
-          onChange={e =>
-            setNewTransaction({
-              ...newTransaction,
-              description: e.target.value,
-            })
-          }
-          value={newTransaction.description}
           type="text"
           placeholder="Digite aqui sua descrição"
+          name="description"
         />
       </div>
 
@@ -31,34 +27,14 @@ function Form({ listTransactions, setListTransactions }) {
         <div className="div__valor">
           <label htmlFor="">Valor</label>
           <div>
-            <input
-              onChange={e =>
-                setNewTransaction({
-                  ...newTransaction,
-                  value: parseInt(e.target.value),
-                })
-              }
-              value={newTransaction.value}
-              type="number"
-              placeholder="R$"
-            />
+            <input type="number" placeholder="R$" name="value" />
             <p>R$</p>
           </div>
         </div>
 
         <div className="div__tipo">
           <label htmlFor="">Tipo de valor</label>
-          <select
-            onChange={e =>
-              setNewTransaction({
-                ...newTransaction,
-                type: e.target.value,
-              })
-            }
-            value={newTransaction.type}
-            name=""
-            id=""
-          >
+          <select name="type" id="">
             <option value="" disabled selected hidden>
               opções
             </option>
