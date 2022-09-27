@@ -12,7 +12,7 @@ function Card({ data, listTransactions, setListTransactions, index }) {
   }
   return (
     <>
-      <li className="lista entrada">
+      <li className={`lista ${data.type.replace('í', 'i')}`}>
         <div className="div__descricao__lista">
           <h4>{data.description}</h4>
           <span>{data.type}</span>

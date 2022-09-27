@@ -14,7 +14,6 @@ function App() {
   ])
   const [filter, setFilter] = useState('')
   const [login, setLogin] = useState(false)
-
   return (
     <>
       {login ? (
@@ -29,6 +28,7 @@ function App() {
             <main>
               <section className="section__form">
                 <Form
+                
                   listTransactions={listTransactions}
                   setListTransactions={setListTransactions}
                 />
