@@ -2,8 +2,6 @@ import  Illustration  from '../../assets/illustration.svg'
 import React from 'react'
 import './style.css'
 
-// import { Container } from './styles';
-
 function HomePage({ setLogin }) {
   return (
     <div>
