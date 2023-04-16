@@ -1,5 +1,8 @@
 # Nu Kenzie
 
+link do vercel 
+https://nu-kenzie-novakoski.vercel.app
+
 Rodando localmente
 Clone o projeto
 
